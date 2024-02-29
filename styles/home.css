@@ -1,0 +1,1856 @@
+/* header_banner */
+
+.home .header_banner {
+    background-image: url("../assets/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    position: relative;
+    z-index: 0;
+}
+
+.home .header_banner::after {
+    content: "";
+    position: absolute;
+    background-color: #0009;
+    inset: 0;
+}
+
+.home .header_banner .banner_content {
+    z-index: 2;
+    position: relative;
+    width: 70%;
+    top: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('path/to/Gotham-Black.woff2') format('woff2'),
+        url('path/to/Gotham-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.home .header_banner .banner_content h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Gotham-Black", sans-serif;
+    /* Use Gotham Black or fallback to a sans-serif font */
+}
+
+
+.home .header_banner .banner_content .scroll-button {
+    position: relative;
+    bottom: -120px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.home .header_banner .banner_content .scroll-line {
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    background-color: white;
+    top: calc(80% - 80px);
+    /* Adjust this value based on the circle height */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home .header_banner .banner_content .scroll-circle {
+    width: 42px;
+    height: 80px;
+    border-radius: 43px;
+    border: 2px solid #DC9401;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    /* Ensure circle is above the line */
+}
+
+.home .header_banner .banner_content .scroll-circle::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -80%);
+    transition: transform 0.3s;
+}
+
+.home .header_banner .banner_content .scroll-circle::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 53px;
+    border-left: 2px solid #DC9401;
+    ;
+    border-bottom: 0px solid #DC9401;
+    ;
+    border-right: 2px solid #DC9401;
+    ;
+    border-top: 0px solid #DC9401;
+    ;
+    left: 48%;
+    top: -14%;
+    transform: translate(-50%, -80%);
+    transition: transform 0.3s;
+}
+
+.home .header_banner .banner_content .scroll-text {
+    color: white;
+    margin-top: 5px;
+}
+
+.home .header_banner .banner_content .scroll-button:hover .scroll-circle::before {
+    transform: translate(-50%, -300%);
+}
+
+
+/* design_services */
+
+.home .design_services .services .services_content {
+    width: 50%;
+}
+
+.home .design_services .services .services_cards {
+    width: 50%;
+}
+
+.home .design_services .services .services_content .pera_head {
+    font-family: "Gotham Book", sans-serif;
+    color: #4D4D4D;
+    position: relative;
+    /* Set position relative for the parent */
+}
+
+.home .design_services .services .services_content .pera {
+    display: flex;
+    gap: 2px;
+    align-items: baseline;
+}
+
+.home .design_services .services .services_content .pera .hr {
+    border: 2px solid #DC9401;
+    width: 28%;
+    height: 2px;
+}
+
+.home .design_services .services .services_content .services_text h1 {
+    font-family: "Gotham-Black", sans-serif;
+    color: #2F2202;
+    font-weight: 800;
+}
+
+.home .design_services .services .services_content .services_text p {
+    color: #888888;
+    font-family: "Gotham Book", sans-serif;
+    width: 484px;
+}
+
+.home .design_services .services .services_content .services_text .buttons button {
+    font-family: 'Gotham-Bold', sans-serif;
+    font-weight: bold;
+    background-color: #DC9401;
+    color: #2F2202;
+    padding: 5px 23px;
+    border: none;
+}
+
+.home .design_services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home .design_services .services .services_content .services_text .buttons .on_hover_btn {
+    border: 1px solid #DC9401;
+    background-color: #fff;
+}
+
+.home .design_services .services .services_content .services_text .buttons .active_btn {
+    padding: 6px 30px;
+}
+
+.home .design_services .services .services_content .services_text .buttons .on_hover_btn:hover {
+    background-color: #DC9401;
+    transition: 0.5s;
+}
+
+.home .design_services .services {
+    display: flex;
+    align-items: center;
+}
+
+.home .design_services .services .services_cards .main_cards {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.home .design_services .services .services_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home .design_services .services .services_cards .main_cards .cards {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: start;
+    border-width: 1px;
+    border-style: solid;
+    border: 1px solid #DC9401;
+    /* border-image: linear-gradient(to bottom, #DC9401, rgba(220, 148, 1, 0)) 1; */
+    border-radius: 22px 22px 6px 7px;
+
+    border-bottom: none;
+}
+
+.home .design_services .services .services_cards .main_cards .cards_hover {
+    border: none;
+}
+
+.home .design_services .services .services_cards .main_cards .cards img {
+    width: auto;
+    height: 40px;
+}
+
+.home .design_services .services .services_cards .main_cards .cards h2 {
+    font-family: 'Gotham-Bold', sans-serif;
+    color: #2F2202;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.home .design_services .services .services_cards .main_cards .cards p {
+    font-family: "Gotham Book", sans-serif;
+    color: #888888;
+    width: 213px;
+    line-height: 1;
+}
+
+.home .design_services .services .services_cards .main_cards .cards_hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home .design_services .services .services_cards .main_cards .cards_hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* making brands */
+
+.home .making_brands .brands .brand_content p {
+    color: #fff;
+    font-family: "Gotham Book", sans-serif;
+}
+
+.home .making_brands .brands .brand_content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .making_brands .brands .brand_content hr {
+    border: 1x solid #DC9401;
+    width: 40%;
+    height: 2px;
+}
+
+
+
+.home .making_brands .brands_ {
+    background-color: #130e00;
+    height: 400px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: -20px;
+    /* Adjust as needed */
+    margin-bottom: -20px;
+    /* Adjust as needed */
+}
+
+.home .making_brands .brands {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.home .making_brands .brands .brand_content .pera {
+    display: flex;
+    /* gap: 2px; */
+    align-items: baseline;
+    flex-direction: column;
+    line-height: 0.3;
+}
+
+.home .making_brands .brands .brand_content .pera .hr {
+    border: 2px solid #DC9401;
+    width: 28%;
+    height: 2px;
+}
+
+.home .making_brands .brands .brand_content h1 {
+    color: #fff;
+    font-family: "Gotham Black", sans-serif;
+    font-weight: 800;
+    width: 90%;
+    padding-top: 10px;
+}
+
+.home .making_brands .brands .brand_startegies,
+.home .making_brands .brands .brand_innovators {
+    width: 30%;
+}
+
+.home .making_brands .brands .brand_startegies {
+    background-color: #DC9401;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    top: -140px;
+    height: 440px;
+    /* padding: 30px; */
+    padding: 67px 20px;
+}
+
+.home .making_brands .brands .brand_startegies p {
+    color: #fff;
+}
+
+
+
+.home .making_brands .brands .brand_startegies .pera {
+    display: flex;
+    /* gap: 2px; */
+    align-items: baseline;
+    flex-direction: column;
+    line-height: 0.3;
+    font-family: "Gotham Book", sans-serif;
+}
+
+.home .making_brands .brands .brand_startegies .pera .pera_head {
+    font-size: 24px;
+}
+
+.home .making_brands .brands .brand_startegies .pera .hr {
+    border: 2px solid #2F2202;
+    width: 50%;
+    height: 2px;
+    font-family: "Gotham Book", sans-serif;
+}
+
+.home .making_brands .brands .brand_startegies .pera_stra {
+    font-size: 16px;
+    /* width: 32%; */
+
+    font-family: "Gotham Black", sans-serif;
+    padding-top: 5px;
+}
+
+.home .making_brands .brands .brand_startegies .content {
+    font-family: "Gotham Black", sans-serif;
+    font-size: 17px;
+}
+
+.home .making_brands .brands .brand_startegies button {
+    background-color: #2F2202;
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+}
+
+/* .home .making_brands {
+    overflow: hidden;
+} */
+
+
+
+
+.home .making_brands .brands .brand_startegies_ {
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    top: -100px;
+    height: 440px;
+    padding: 26px 20px;
+    width: 30%;
+    background-color: #888888;
+    margin-bottom: -20px;
+    /* Adjust as needed */
+}
+
+.home .making_brands .brands .brand_startegies_ p {
+    color: #fff;
+}
+
+
+
+.home .making_brands .brands .brand_startegies_ .pera {
+    display: flex;
+    /* gap: 2px; */
+    align-items: baseline;
+    flex-direction: column;
+    line-height: 0.3;
+    font-family: "Gotham Book", sans-serif;
+}
+
+.home .making_brands .brands .brand_startegies_ .pera .pera_head {
+    font-size: 24px;
+}
+
+.home .making_brands .brands .brand_startegies_ .pera .hr {
+    border: 2px solid #2F2202;
+    width: 50%;
+    height: 2px;
+    font-family: "Gotham Book", sans-serif;
+}
+
+.home .making_brands .brands .brand_startegies_ .pera_stra {
+    font-size: 16px;
+    /* width: 32%; */
+
+    font-family: "Gotham Black", sans-serif;
+    padding-top: 5px;
+}
+
+.home .making_brands .brands .brand_startegies_ .content {
+    font-family: "Gotham Black", sans-serif;
+    font-size: 17px;
+}
+
+.home .making_brands .brands .brand_startegies_ button {
+    background-color: transparent;
+    color: #fff;
+    padding: 7px 20px;
+    border: 1px solid #DC9401;
+
+}
+
+
+
+/* portfolio */
+.home .portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.home .portfolio .row>* {
+    padding: 0;
+}
+
+.home .portfolio h1 {
+    font-family: 'Gotham-Bold', sans-serif;
+    color: #2F2202;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.home .portfolio .full-screen-image {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black background */
+}
+
+.home .portfolio .full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .portfolio .overlay-text {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    opacity: 1;
+    /* Show overlay text by default */
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home .portfolio .overlay-text a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.home .portfolio .overlay-text a:hover {
+    color: #DC9401;
+}
+
+.home .portfolio .overlay-text a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #DC9401;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+}
+
+.home .portfolio .overlay-text a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+.home .portfolio .img {
+    position: relative;
+    width: 100%;
+}
+
+.home .portfolio .img .overlay {
+    position: absolute;
+    top: 37%;
+    right: 0;
+    background-color: #DC9401;
+    color: white;
+    padding: 26px 14px;
+    z-index: 1;
+}
+
+.home .portfolio .img .overlay h3 {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+
+
+
+.home .portfolio .img2 {
+    position: relative;
+    width: 100%;
+}
+
+.home .portfolio .overlay_ {
+    position: absolute;
+    top: 0px;
+
+    background-color: #DC9401;
+    color: white;
+    padding: 10px 35px;
+    z-index: 1;
+}
+
+.home .portfolio .overlay_ h3 {
+    margin: 0;
+    text-orientation: mixed;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.home .portfolio .img3 {
+    position: relative;
+    width: 100%;
+}
+
+.home .portfolio .overlay_3 {
+    position: absolute;
+    top: 250px;
+
+    background-color: #DC9401;
+    color: white;
+    padding: 50px 14px;
+    z-index: 1;
+}
+
+.home .portfolio .overlay_3 h3 {
+    margin: 0;
+    text-orientation: mixed;
+    color: #fff;
+    font-size: 16px;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+}
+
+
+
+
+.home .portfolio .img4 {
+    position: relative;
+    width: 100%;
+}
+
+.home .portfolio .overlay_4 {
+    position: absolute;
+    top: 250px;
+    right: 0%;
+    background-color: #DC9401;
+    color: white;
+    padding: 26px 14px;
+    z-index: 1;
+}
+
+.home .portfolio .overlay_4 h3 {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+
+
+/* discuss */
+
+
+
+.home .discuss {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home .discuss .discus_contents {
+    background-color: #DC9401;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+
+.home .discuss .discus_contents .content_1 {
+    width: 80%;
+    padding: 20px;
+    line-height: 0.8;
+}
+
+.home .discuss .discus_contents .content_1 p {
+    color: #fff;
+}
+
+.home .discuss .discus_contents .content_1 .pera_head {
+    font-family: 'Gotham-Bold', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.home .discuss .discus_contents .content_1 .contact {
+    font-family: "Gotham Book", sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 200;
+}
+
+.home .discuss .discus_contents {
+    display: flex;
+    align-items: center;
+
+}
+
+.home .discuss {
+    background-image: url("../assets/disscus.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+}
+
+.home .discuss .discus_contents .discuss_now button {
+    padding: 10px 30px;
+    background-color: #2F2202;
+    color: #DC9401;
+    font-family: 'Gotham-Bold', sans-serif;
+    border: none;
+}
+
+/* packages */
+.home .packages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home .packages .pricing_packages span {
+    font-family: "Gotham Book", sans-serif;
+    color: #2F2202;
+    border-bottom: 4px solid #4D4D4D;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.home .packages .pricing_packages h1 {
+    color: #2F2202;
+    font-weight: 800;
+    width: 494px;
+    padding-top: 40px;
+    font-family: "Gotham Black", sans-serif;
+}
+
+.home .packages .pricing_packages p {
+    color: #888888;
+    font-family: "Gotham Book", sans-serif;
+    width: 524px;
+    font-size: 18px;
+}
+
+
+
+.home .packages .nav-pills .nav-link.active,
+.home .packages .nav-pills .show>.nav-link {
+    color: #2F2202 !important;
+    background-color: #DC9401 !important;
+}
+
+
+.home .packages .nav-pills .nav-link {
+    background: 0 0;
+    border: 1px solid #DC9401;
+    border-radius: 5px;
+    color: #2F2202;
+}
+
+.home .packages .nav-pills {
+    display: flex;
+    gap: 20px;
+}
+
+.home .packages .owl-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.home .packages .owl-prev span,
+.home .packages .owl-next span {
+    border: 1px solid #DC9401;
+    padding: 0px 28px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+
+
+.home .packages .owl-carousel .item {
+    border: 1px solid #DC9401;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.home .packages .owl-carousel .item h2 {
+    color: #2F2202;
+    font-family: "Gotham Black", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.home .packages .owl-carousel .item .h2 {
+    color: #2F2202;
+    font-family: "Gotham Black", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.home .packages .owl-carousel .item p {
+    color: #888888;
+    font-family: "Gotham Book", sans-serif;
+
+}
+
+.home .packages .owl-carousel .item .pricing {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.home .packages .owl-carousel .item .pricing span {
+    color: #DC2626;
+}
+
+.home .packages .owl-carousel .item .pricing h2 {
+    border-right: 1px solid #888888;
+    padding-right: 20px;
+}
+
+.home .packages .owl-carousel .item ul li {
+    color: #4D4D4D;
+    font-size: 14px;
+
+}
+
+.home .packages .owl-carousel .item ul li::marker {
+    color: #DC9401;
+}
+
+.home .packages .owl-carousel .item .btns {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.home .packages .owl-carousel .item .btns button {
+    background-color: #DC9401;
+    color: #2F2202;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-size: 20px;
+    padding: 7px 20px;
+    border: none;
+    font-family: 'Gotham Medium', sans-serif;
+    position: relative;
+    border-radius: 5px;
+}
+
+.home .packages .owl-carousel .item .btns button i {
+    animation: moveRight 1s infinite alternate;
+    display: inline-block;
+    color: #fff;
+}
+
+
+
+.home .packages .owl-carousel .item .btns_2 {
+    padding-top: 25px;
+}
+
+.home .packages .owl-carousel .item_0 {
+    background-image: url("../assets/Rectangle\ 39.png");
+}
+
+/* visionaries */
+
+
+.home .visionaries h1 {
+    color: #2F2202;
+    font-family: "Gotham Black", sans-serif;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.home .visionaries {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home .visionaries .main_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+
+}
+
+.home .visionaries .main_cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 20px;
+    line-height: 0;
+    width: 261px;
+    height: 246px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.home .visionaries .main_cards .card h1 {
+    font-family: "Gotham Black", sans-serif;
+    color: #888888;
+
+}
+
+.home .visionaries .main_cards .card p {
+    margin-bottom: 0;
+}
+
+.home .visionaries .main_cards .card img {
+    width: auto;
+    height: 50px;
+}
+
+.home .visionaries .main_cards .card_1 {
+    background-color: #fff;
+    border: 1px solid #DC9401;
+    border-bottom: none;
+}
+
+.home .visionaries .btns button {
+    padding: 10px 30px;
+    background-color: #DC9401;
+    color: #fff;
+    font-family: 'Gotham Medium', sans-serif;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.home .visionaries .btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.home .visionaries .btns .call {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #DC9401;
+    font-weight: 500;
+}
+
+.home .visionaries .btns .call:hover {
+    background-color: #DC9401;
+    color: #fff;
+    border: none;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+/* handsome */
+.handsome .container .text {
+    font-size: 48px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+    color: #fff;
+}
+
+.handsome .container form {
+    width: 84%;
+}
+
+.handsome .container form .form-row {
+    display: flex;
+    margin: 17px 0;
+    gap: 64px;
+}
+
+.handsome form .form-row .input-data {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    color: white;
+    padding-left: 10px;
+
+}
+
+.handsome .input-data input,
+.handsome .textarea textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    border-bottom: 1px solid white;
+    background-color: #4D4D4D;
+    color: #fff;
+
+}
+
+.handsome .input-data input:focus~label,
+.textarea textarea:focus~label,
+.handsome .input-data input:valid~label,
+.textarea textarea:valid~label {
+    transform: translateY(-25px);
+    font-size: 15px;
+    color: #DC9401;
+}
+
+.handsome .textarea textarea {
+    resize: none;
+
+}
+
+.handsome .input-data label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.handsome .textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+}
+
+.handsome .input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.handsome .input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.handsome .responsible {
+
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #fff;
+
+
+}
+
+.handsome .textarea textarea:valid~.underline:before {
+    transform: scale(1);
+}
+
+.handsome .submit-btn .input-data {
+    overflow: hidden;
+    height: 45px !important;
+    width: 25% !important;
+}
+
+.handsome .submit-btn .input-data .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: blue;
+    transition: all 0.4s;
+}
+
+.handsome .submit-btn .input-data:hover .inner {
+    left: 0;
+}
+
+.handsome .submit-btn .input-data input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.handsome .send1 {
+
+    font-size: 18px;
+    padding-top: 36px;
+
+}
+
+.handsome .send2 {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 19px;
+    padding: 10px 20px;
+    background-color: #DC9401;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border: none;
+
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.handsome .fa-arrow-right {
+    font-size: 18px;
+    animation: moveRight 1s infinite alternate;
+}
+
+
+.handsome .main_forms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.handsome .forms___ {
+    background: #fff;
+    background-color: #4D4D4D;
+    padding: 20px;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.handsome .forms___ .image {
+    position: relative;
+    top: -143px;
+}
+
+.handsome .forms___ .image img {
+    width: auto;
+    height: 523px;
+}
+
+.handsome {
+    padding-top: 150px;
+}
+
+
+.handsome .main_forms .forms {
+    width: 100%;
+}
+
+.handsome input:focus-visible {
+    outline: none;
+}
+
+
+/* testimonials */
+.home .testimonials .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.home .testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home .testimonials .slider {
+    position: relative;
+
+    /* max-width: 100vw; */
+    margin: 0 auto;
+}
+
+.home .testimonials .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.home .testimonials .card {
+    flex: 0 0 33.333%;
+    height: 400px;
+
+}
+
+.home .testimonials .square .names {
+    font-size: 12px;
+}
+
+.home .testimonials .square {
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 52px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 20px;
+}
+
+.home .testimonials .square2 {
+    background-color: #2F2202;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.home .testimonials .square2 p {
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.home .testimonials .rectangle {
+    background-color: #DC9401;
+    height: 200px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px;
+}
+
+.home .testimonials .rectangle h1 {
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    font-weight: 800;
+}
+
+.home .testimonials .rectangle p {
+    font-size: 12px;
+    width: 80%;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+}
+
+.home .testimonials .navigation {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home .testimonials button {
+    padding: 7px 15px;
+    margin: 0 5px;
+    background-color: #DC9401;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+/*  responsive  */
+
+
+@media (max-width: 1199px) {
+    .home .making_brands .brands .brand_startegies .pera {
+        line-height: 1.1;
+    }
+
+    .home .making_brands .brands .brand_startegies .pera .pera_head,
+    .home .making_brands .brands .brand_startegies_ .pera .pera_head {
+        font-size: 22px;
+    }
+
+    .home .making_brands .container {
+        max-width: 1110px;
+    }
+    .home .discuss  .container{
+        max-width: 1124px;
+    }
+    .home .visionaries  .container ,.home .handsome  .container{
+        max-width: 1136px;
+    }
+}
+@media (max-width: 1052px) {
+    .handsome .send1{
+        padding-top: 16px;
+    }
+}
+@media (max-width: 1008px) {
+    .home .discuss .discus_contents .discuss_now button{
+        font-size: 14px !important;
+    }
+}
+@media (max-width: 1067px) {
+    .home .design_services .services .services_cards .main_cards .cards p {
+        width: 100% !important;
+    }
+
+    .home .design_services .services .services_content .services_text p {
+        width: 100% !important;
+    }
+}
+@media (max-width: 998px) {
+    .handsome .container .text{
+        font-size: 43px ;
+    }
+    .handsome .responsible{
+        font-size: 12px ;
+    }
+    .handsome .send1{
+        padding-top: 50px;
+    }
+}
+@media (max-width: 991px) {
+    .home .making_brands .container {
+        max-width: 1020px
+    }
+    .home .visionaries .main_cards{
+        flex-direction: column;
+    }
+    .home .visionaries .main_cards .card ,.home .visionaries .main_cards .card_1{
+        width: 70%;
+    }
+    .home .visionaries .main_cards{
+        gap: 48px;
+    }
+}
+@media (max-width: 947px) {
+    .handsome .container .text{
+        font-size: 38px ;
+    }
+
+}
+    @media (max-width: 922px) {
+        .home .discuss .discus_contents .discuss_now button{
+            font-size: 12px !important;
+        }
+
+    }
+    @media (max-width: 896px) {
+        .handsome .container .text{
+            font-size: 34px ;
+        }
+        .handsome .responsible{
+            font-size: 12px;
+        }
+
+    }
+
+    @media (max-width: 854px) {
+        .handsome .forms___ .image img{
+            height: 490px;
+        }
+        .handsome .forms___ .image{
+            top: -110px;
+        }
+
+    }
+
+    @media (max-width: 827px) {
+        .handsome .forms___ .image img{
+            height: 463px;
+        }
+        .handsome .forms___ .image{
+            top: -83px;
+        }
+        .handsome .responsible{
+            font-size: 10px !important;
+        }
+        .handsome .send1{
+            padding-top: 70px;
+        }
+    }
+    @media (max-width: 805px) {
+        .handsome .main_forms{
+            flex-direction: column;
+        }
+        .handsome .forms___{
+            height: 100% !important;
+        }
+        .handsome .forms___ .image{
+            top: 20px !important;
+            margin: auto;
+        }
+    }
+
+    
+    @media (max-width: 877px) {
+        .home .testimonials .square{
+            font-size: 11px !important;
+        }
+        .home .testimonials .rectangle p{
+            font-size: 10px !important;
+        }
+        .home .testimonials .rectangle h1{
+            font-size: 25px !important;
+        }
+    }
+    @media (max-width: 848px) {
+        .home .discuss .discus_contents .content_1 .pera_head{
+            font-size: 19px;
+        }
+        .home .discuss .discus_contents .content_1 .contact{
+            font-size: 15px;
+        }
+        .home .discuss .discus_contents .discuss_now button{
+            font-size: 10px !important;
+        }
+
+     
+    }
+
+
+
+    @media (max-width: 984px) {
+        .home .making_brands .brands {
+            flex-direction: column;
+        }
+
+        .home .making_brands .brands_ {
+            height: 100% !important;
+        }
+
+        .home .making_brands .brands .brand_startegies {
+            top: 0;
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .home .making_brands .brands .brand_startegies_ {
+            top: 0;
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .home .making_brands .brands .brand_content {
+            width: 100%;
+        }
+    }
+
+
+@media (max-width: 1018px) {
+    .home .portfolio .img .overlay {
+        top: 22%;
+    }
+
+    .home .portfolio .overlay_4,
+    .home .portfolio .overlay_3 {
+        top: 176px;
+    }
+}
+
+@media (max-width: 820px) {
+    .handsome .container .text{
+        font-size: 26px !important;
+    }
+}
+@media (max-width: 755px) {
+    .home .discuss .discus_contents .content_1 .pera_head{
+        font-size: 16px !important;
+    }
+    .home .discuss .discus_contents .content_1 .contact{
+        font-size: 13px !important;
+    }
+    .home .discuss .discus_contents .discuss_now button{
+        font-size: 9px !important;
+    }
+}
+@media (max-width: 708px) {
+    .home .discuss .discus_contents .discuss_now button{
+        font-size: 7px !important;
+    }
+    .home .testimonials .square2 img ,.home .testimonials .square img{
+        height: 37px !important;
+    }
+    
+}
+@media (max-width: 666px) {
+    .home .testimonials .square{
+        font-size: 8px !important;
+    }
+    .home .testimonials .square2 img ,.home .testimonials .square img{
+        height: 37px !important;
+    }
+    .home .testimonials .square2 img, .home .testimonials .square img{
+        height: 27px !important;
+    }
+    .home .testimonials .rectangle h1{
+        font-size: 20px !important;
+    }
+    .home .testimonials .rectangle p{
+        font-size: 9px;
+    }
+    .home .testimonials .square .names{
+        font-size: 7px;
+    }
+    .home .testimonials .card{
+        height: 200px;
+    }
+
+    .home .testimonials .square{
+    gap: 9px;
+    padding: 28px;
+    }
+    .home .testimonials .rectangle{
+        height: 108px !important;
+    }
+    .home .testimonials .rectangle p{
+        font-size: 5px  !important;
+        width: 100% !important;
+    }
+    .home .testimonials .rectangle h1{
+        font-size: 17px !important;
+    }
+}
+@media (max-width: 623px) {
+    .home .discuss .discus_contents .discuss_now button{
+        font-size: 7px !important;
+    }
+    .home .discuss .discus_contents .content_1 .pera_head{
+        font-size: 13px !important;
+    }
+    .home .discuss .discus_contents .content_1 .contact{
+        font-size: 11px !important;
+    }
+    .home .discuss .discus_contents .discuss_now button{
+        padding: 8px 17px;
+    
+    }
+}
+
+@media (max-width: 495px) {
+    .home .discuss .discus_contents .discuss_now button{
+        padding: 8px 10px;
+    
+    }
+    .home .discuss .discus_contents .content_1 .pera_head{
+        font-size: 11px !important;
+    }
+    .home .discuss .discus_contents .content_1 .contact{
+        font-size: 9px !important;
+    }
+}
+
+@media (max-width: 437px) {
+    .home .discuss .discus_contents .discuss_now button{
+        padding: 5px 6px;
+    
+    }
+    .home .discuss .discus_contents .content_1 .pera_head{
+        font-size: 9px !important;
+    }
+    .home .discuss .discus_contents .content_1 .contact{
+        font-size: 7px !important;  
+    }
+    .home .visionaries .btns{
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    .handsome .forms___ .image img{
+        height: 360px !important;
+    }
+    .handsome .main_forms{
+        gap: 97px;
+    }
+}
+@media (max-width: 362px) {
+    .home .visionaries .main_cards .card p{
+        font-size: 12px  !important;
+    }
+}
+@media (max-width: 349px) {
+    .handsome .forms___ .image img{
+        height: 314px !important;
+    }
+}
+@media (max-width: 842px) {
+    .home .portfolio .img .overlay {
+        top: 12%;
+    }
+
+    .home .portfolio .overlay_4,
+    .home .portfolio .overlay_3 {
+        top: 106px;
+    }
+}
+
+
+@media (max-width: 558px) {
+    .home .portfolio .img .overlay h3 {
+        top: 12%;
+        font-size: 14px;
+    }
+    .home .portfolio .overlay_ h3{
+        font-size: 14px;
+    }
+    .home .portfolio .overlay_4,
+    .home .portfolio .overlay_3 {
+        top: 50px !important;
+     
+    }
+    .home .portfolio .overlay_4 h3,
+    .home .portfolio .overlay_3 h3{
+        font-size: 14px;
+    }
+    .home .testimonials .square{
+        gap: 3px !important;
+    }
+    .home .testimonials .square2 img, .home .testimonials .square img{
+        height: 18px !important;
+    }
+    .home .testimonials .square{
+        padding: 18px !important;
+    }
+}
+@media (max-width: 486px) {
+    .home .portfolio .img .overlay h3 ,.home .portfolio .overlay_ h3 , .home .portfolio .overlay_4 h3,
+    .home .portfolio .overlay_3 h3 {
+       
+        font-size: 10px !important;
+    }
+    .home .portfolio .overlay_3{
+        left: 13px; 
+    }
+    .home .portfolio .overlay_4{
+        right: 12px;
+    }
+    .home .portfolio .overlay-text ,.home .portfolio .overlay-text a{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 374px) {
+    .home .portfolio .img .overlay{
+        top: 10% !important;
+    }
+    .home .portfolio .img .overlay h3 {
+       
+        font-size: 7px !important;
+    }
+    .home .portfolio .overlay_ h3{
+        font-size: 7px !important;
+    }
+    .home .portfolio .overlay-text, .home .portfolio .overlay-text a{
+        font-size: 10px;
+    }
+    .home .portfolio .overlay_4 h3,
+    .home .portfolio .overlay_3 h3{
+        font-size: 7px !important;
+    }
+}
+
+
+@media (max-width: 324px) {
+    .home .portfolio .overlay_{
+    padding: 3px 14px !important;
+    }    
+    .home .portfolio .img .overlay{
+        padding: 4px 4px !important;
+    }
+    .home .portfolio .overlay_3{
+        padding: 14px 3px !important;
+    }
+    .home .portfolio .overlay_4{
+    padding: 3px 4px !important;
+    }
+    .home .portfolio .overlay-text, .home .portfolio .overlay-text a{
+        font-size: 8px;
+    }
+}
+@media (max-width: 718px) {
+    .home .portfolio .img .overlay {
+        top: 12%;
+        padding: 8px 9px;
+    }
+
+    .home .portfolio .overlay_4 {
+        top: 106px;
+        padding: 8px 9px;
+    }
+
+    .home .portfolio .overlay_3 {
+        top: 106px;
+        padding: 30px 8px;
+    }
+
+    .home .portfolio .overlay_ {
+        padding: 8px 35px;
+    }
+}
+
+@media (max-width: 903px) {
+    .home .design_services .services {
+        flex-direction: column;
+    }
+
+    .home .design_services .services .services_cards .main_cards {
+        flex-direction: column;
+    }
+
+    .home .design_services .services .services_cards,
+    .home .design_services .services .services_content {
+        width: 70%;
+    }
+
+}
+
+
+
+@media (max-width: 573px) {
+    .home .design_services .services_content .buttons {
+        display: flex;
+        gap: 2px;
+        font-size: 12px;
+        justify-content: center;
+    }
+    .home .packages .pricing_packages h1 ,.home .packages .pricing_packages p{
+        width: 100%;
+    }
+    .home .packages .nav-pills{
+        justify-content: space-evenly;
+    }
+
+
+}
+
+@media (max-width: 471px) {
+    .home .design_services .services_content .buttons {
+
+        font-size: 10px;
+
+    }
+
+    .home .design_services .services .services_content .services_text h1 {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .home .design_services .services_content .buttons {
+
+        font-size: 10px;
+
+    }
+
+    .home .design_services .services .services_content .services_text h1 {
+        font-size: 20px;
+    }
+
+    .home .design_services .services .services_content .services_text p {
+        font-size: 15px;
+    }
+
+    .home .design_services .services .services_content .pera_head {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 414px) {
+    .home .design_services .services_content .buttons {
+
+        font-size: 8px;
+
+    }
+
+    .home .design_services .services .services_content .services_text h1 {
+        font-size: 20px;
+    }
+
+    .home .design_services .services .services_content .pera_head {
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 391px) {
+
+    .home .design_services .services .services_content .pera_head {
+        font-size: 9px !important;
+    }
+    .home .discuss .discus_contents .discuss_now button {
+        padding: 5px 4px;
+        font-size: 6px !important;
+    }
+    .home .discuss .discus_contents .content_1 .pera_head {
+        font-size: 8px !important;
+    }
+    .home .discuss .discus_contents .content_1 .contact {
+        font-size: 6px !important;
+    }
+    .home .testimonials .rectangle h1{
+        font-size: 14px !important;
+    }
+    .home .testimonials .rectangle{
+        height: 92px !important;
+    }
+    .home .testimonials .card{
+        height: 159px !important;
+    }
+
+    .home .testimonials .square{
+        padding: 14px !important;
+    }
+    .home .testimonials .square{
+        font-size: 6px !important;
+    }
+    .home .testimonials .rectangle{
+        height: 90px !important;
+    }
+}
+@media (max-width: 390px) {
+    .home .discuss .discus_contents .discuss_now button {
+        padding: 5px 3px;
+        font-size: 5px !important;
+    }
+    .home .discuss .discus_contents .content_1 .contact {
+        font-size: 5px !important;
+    }
+    .home .discuss .discus_contents .content_1 .pera_head {
+        font-size: 7px !important;
+    }
+    .home .discuss .discus_contents .content_1{
+        line-height: 0 !important;
+    }
+    .home .testimonials button{
+        padding: 1px 10px;
+    }
+    .home .testimonials button i{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .home .design_services .services .services_content .pera_head {
+        font-size: 7px !important;
+    }
+
+    .home .design_services .services .services_content .services_text h1 {
+        font-size: 14px;
+    }
+
+    .home .design_services .services .services_content .services_text p {
+        font-size: 11px;
+    }
+
+    .home .design_services .services_content .buttons {
+        flex-direction: column;
+    }
+    .home .testimonials .rectangle h1{
+        font-size: 12px !important;
+    }
+}
